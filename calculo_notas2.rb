@@ -1,9 +1,10 @@
 #Debemos crear un metodo nota_mas_alta que reciba un arreglo con el nombre y notas del alumno y devuelva la nota más alta.
 data = open('notas.data').readlines
-data = data.map do |reg| 
-    reg.split(',')
-end
+#data = data.map do |reg| 
+#reg.split(',')
+#end
 def nota_mas_alta(arr)
+
     notas = arr[1..5]
 
     notas = notas.map do |note|
@@ -12,14 +13,5 @@ def nota_mas_alta(arr)
     notas.max
 end
 
-print nota_mas_alta(data[0]) 
-#dentro del metodo no es necesario recorrelo mas de una vez.
-
-
-
-
-
-
-#def nota_mas_alta(arr)
-#    while split
-#end
+print data
+#nota_mas_alta(data) 
